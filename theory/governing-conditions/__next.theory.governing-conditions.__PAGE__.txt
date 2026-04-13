@@ -3,7 +3,7 @@
 3:I[25972,["/coherence-theory-website/_next/static/chunks/0zj_hz2uum20w.js","/coherence-theory-website/_next/static/chunks/09t2isllljna7.js","/coherence-theory-website/_next/static/chunks/0d3shmwh5_nmn.js","/coherence-theory-website/_next/static/chunks/0kg_yr7ko8k-o.js","/coherence-theory-website/_next/static/chunks/0s8~.7k5fl7_2.js"],"default"]
 6:I[97367,["/coherence-theory-website/_next/static/chunks/0zj_hz2uum20w.js","/coherence-theory-website/_next/static/chunks/09t2isllljna7.js","/coherence-theory-website/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/coherence-theory-website/_next/static/chunks/0s8~.7k5fl7_2.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"vitQ5aAvaq0GMsB7q6aWP"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/coherence-theory-website/_next/static/chunks/0s8~.7k5fl7_2.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"BdwBezo6q0c_Htsp5Czk1"}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
