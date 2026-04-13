@@ -1,2 +1,2 @@
-:HL["/coherence-theory-website/_next/static/chunks/09x0srr8fi_8o.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"iLXS7gdRENrpiAFR5FVE1"}
+:HL["/coherence-theory-website/_next/static/chunks/0ynj06-uke1iz.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"vitQ5aAvaq0GMsB7q6aWP"}

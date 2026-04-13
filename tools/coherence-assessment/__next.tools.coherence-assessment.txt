@@ -2,4 +2,4 @@
 2:I[39756,["/coherence-theory-website/_next/static/chunks/0zj_hz2uum20w.js","/coherence-theory-website/_next/static/chunks/09t2isllljna7.js","/coherence-theory-website/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
 3:I[37457,["/coherence-theory-website/_next/static/chunks/0zj_hz2uum20w.js","/coherence-theory-website/_next/static/chunks/09t2isllljna7.js","/coherence-theory-website/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
 4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"iLXS7gdRENrpiAFR5FVE1"}
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"vitQ5aAvaq0GMsB7q6aWP"}
