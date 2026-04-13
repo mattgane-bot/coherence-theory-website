@@ -1,6 +1,9 @@
 1:"$Sreact.fragment"
-2:I[33443,["/coherence-theory-website/_next/static/chunks/0zj_hz2uum20w.js","/coherence-theory-website/_next/static/chunks/09t2isllljna7.js","/coherence-theory-website/_next/static/chunks/0d3shmwh5_nmn.js","/coherence-theory-website/_next/static/chunks/0z7s6q069td87.js","/coherence-theory-website/_next/static/chunks/0xfz.2l.ej_9j.js"],"ComingSoon"]
-3:I[97367,["/coherence-theory-website/_next/static/chunks/0zj_hz2uum20w.js","/coherence-theory-website/_next/static/chunks/09t2isllljna7.js","/coherence-theory-website/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"prose","children":["$","$L2",null,{"title":"Sublimation","description":"The process through which human instinct, emotion, and social behaviour are transformed into symbolic, cultural, and spatial structure.","domain":"Human","domainColor":"bg-human"}]}],[["$","script","script-0",{"src":"/coherence-theory-website/_next/static/chunks/0xfz.2l.ej_9j.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Bo0YMK3UtN5yUYb_i9s-0"}
-5:null
+2:I[47257,["/coherence-theory-website/_next/static/chunks/0zj_hz2uum20w.js","/coherence-theory-website/_next/static/chunks/09t2isllljna7.js","/coherence-theory-website/_next/static/chunks/0d3shmwh5_nmn.js"],"ClientPageRoot"]
+3:I[11799,["/coherence-theory-website/_next/static/chunks/0zj_hz2uum20w.js","/coherence-theory-website/_next/static/chunks/09t2isllljna7.js","/coherence-theory-website/_next/static/chunks/0d3shmwh5_nmn.js","/coherence-theory-website/_next/static/chunks/0z7s6q069td87.js","/coherence-theory-website/_next/static/chunks/096g5gwurfr4e.js"],"default"]
+6:I[97367,["/coherence-theory-website/_next/static/chunks/0zj_hz2uum20w.js","/coherence-theory-website/_next/static/chunks/09t2isllljna7.js","/coherence-theory-website/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/coherence-theory-website/_next/static/chunks/096g5gwurfr4e.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"9fHo5HnTBbrlyFFAy5pGh"}
+4:{}
+5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
+8:null
