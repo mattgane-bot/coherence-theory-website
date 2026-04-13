@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
+import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface DiagramNode {
@@ -10,6 +11,7 @@ interface DiagramNode {
   y: number;
   category: "governing" | "human" | "process" | "structure" | "evaluation" | "application" | "core";
   summary: string;
+  href?: string;
 }
 
 interface DiagramEdge {
@@ -20,36 +22,36 @@ interface DiagramEdge {
 
 const NODES: DiagramNode[] = [
   // Governing conditions (top)
-  { id: "energy", label: "Energy & Entropy", x: 400, y: 40, category: "governing", summary: "All systems require energy; entropy degrades structure" },
-  { id: "triad", label: "The Triad", x: 400, y: 120, category: "governing", summary: "Gradient, order, and constraint organise energy into structure" },
-  { id: "fip", label: "Fundamental\nIntrinsic Properties", x: 200, y: 180, category: "governing", summary: "Define what can physically exist" },
-  { id: "cip", label: "Complex\nIntrinsic Properties", x: 600, y: 180, category: "governing", summary: "Govern how systems behave through time" },
-  { id: "emergence", label: "Intrinsic\nEmergence", x: 400, y: 260, category: "governing", summary: "Threshold where structure first becomes possible" },
+  { id: "energy", label: "Energy & Entropy", x: 400, y: 40, category: "governing", summary: "All systems require energy; entropy degrades structure", href: "/theory/governing-conditions" },
+  { id: "triad", label: "The Triad", x: 400, y: 120, category: "governing", summary: "Energy, symmetry, and opposing forces organise energy into structure", href: "/theory/governing-conditions" },
+  { id: "fip", label: "Fundamental\nIntrinsic Properties", x: 200, y: 180, category: "governing", summary: "Define what can physically exist", href: "/theory/governing-conditions" },
+  { id: "cip", label: "Complex\nIntrinsic Properties", x: 600, y: 180, category: "governing", summary: "Govern how systems behave through time", href: "/theory/governing-conditions" },
+  { id: "emergence", label: "Intrinsic\nEmergence", x: 400, y: 260, category: "governing", summary: "Threshold where structure first becomes possible", href: "/theory/governing-conditions" },
 
   // Human mediation (left)
-  { id: "neuro", label: "Neurophysical\nSystem", x: 80, y: 320, category: "human", summary: "How organisms perceive and respond to environment" },
-  { id: "human-cond", label: "Human\nConditions", x: 80, y: 410, category: "human", summary: "Universal needs: light, shelter, prospect, refuge" },
-  { id: "sublimation", label: "Sublimation", x: 80, y: 500, category: "human", summary: "Instinct transformed into culture and spatial form" },
+  { id: "neuro", label: "Neurophysical\nSystem", x: 80, y: 320, category: "human", summary: "How organisms perceive and respond to environment", href: "/theory/emergent-centres" },
+  { id: "human-cond", label: "Human\nConditions", x: 80, y: 410, category: "human", summary: "Universal needs: light, shelter, prospect, refuge", href: "/theory/sublimation" },
+  { id: "sublimation", label: "Sublimation", x: 80, y: 500, category: "human", summary: "Instinct transformed into culture and spatial form", href: "/theory/sublimation" },
 
   // Process (centre)
-  { id: "dynamic-engine", label: "The Dynamic\nEngine", x: 400, y: 380, category: "process", summary: "Six phases: how systems develop through time" },
+  { id: "dynamic-engine", label: "The Dynamic\nEngine", x: 400, y: 380, category: "process", summary: "Six phases: how systems develop through time", href: "/theory/dynamic-engine" },
 
   // Structure (right)
-  { id: "centres", label: "Centres", x: 700, y: 340, category: "structure", summary: "Local concentrations of organised relationship" },
-  { id: "congruence", label: "Congruence", x: 700, y: 420, category: "evaluation", summary: "Local integration of compatible centres" },
+  { id: "centres", label: "Centres", x: 700, y: 340, category: "structure", summary: "Local concentrations of organised relationship", href: "/theory/centres-to-endurance" },
+  { id: "congruence", label: "Congruence", x: 700, y: 420, category: "evaluation", summary: "Local integration of compatible centres", href: "/theory/centres-to-endurance" },
 
   // Evaluation
-  { id: "hierarchy", label: "Coherence\nHierarchy", x: 250, y: 500, category: "evaluation", summary: "Six types of coherence across domains" },
-  { id: "alignment", label: "Alignment", x: 400, y: 500, category: "evaluation", summary: "Compatibility of all conditions" },
+  { id: "hierarchy", label: "Coherence\nHierarchy", x: 250, y: 500, category: "evaluation", summary: "Six types of coherence across domains", href: "/theory/coherence-hierarchy" },
+  { id: "alignment", label: "Alignment", x: 400, y: 500, category: "evaluation", summary: "Compatibility of all conditions", href: "/theory/coherence-hierarchy" },
 
   // Core
-  { id: "coherence", label: "Coherence", x: 400, y: 600, category: "core", summary: "Sustained alignment under constraint" },
-  { id: "wholeness", label: "Wholeness", x: 550, y: 600, category: "evaluation", summary: "Integration across scales and domains" },
-  { id: "endurance", label: "Endurance", x: 400, y: 690, category: "evaluation", summary: "Persistence through time" },
+  { id: "coherence", label: "Coherence", x: 400, y: 600, category: "core", summary: "Sustained alignment under constraint", href: "/theory/three-domains" },
+  { id: "wholeness", label: "Wholeness", x: 550, y: 600, category: "evaluation", summary: "Integration across scales and domains", href: "/theory/centres-to-endurance" },
+  { id: "endurance", label: "Endurance", x: 400, y: 690, category: "evaluation", summary: "Persistence through time", href: "/theory/centres-to-endurance" },
 
   // Application (bottom)
-  { id: "patterns", label: "Pattern\nLanguages", x: 250, y: 690, category: "application", summary: "How coherence is reproduced" },
-  { id: "forms", label: "Form\nLanguages", x: 250, y: 770, category: "application", summary: "Physical expression of coherent relationships" },
+  { id: "patterns", label: "Pattern\nLanguages", x: 250, y: 690, category: "application", summary: "How coherence is reproduced", href: "/theory/pattern-languages" },
+  { id: "forms", label: "Form\nLanguages", x: 250, y: 770, category: "application", summary: "Physical expression of coherent relationships", href: "/theory/pattern-languages" },
 ];
 
 const EDGES: DiagramEdge[] = [
@@ -92,6 +94,7 @@ function getNodePos(id: string): { x: number; y: number } {
 }
 
 export function MasterTheoryDiagram() {
+  const router = useRouter();
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
   const [selectedNode, setSelectedNode] = useState<string | null>(null);
 
@@ -243,6 +246,14 @@ export function MasterTheoryDiagram() {
             <p className="text-sm text-charcoal-light leading-relaxed">
               {selectedData.summary}
             </p>
+            {selectedData.href && (
+              <button
+                onClick={() => router.push(selectedData.href!)}
+                className="mt-2 text-xs font-medium text-accent hover:text-accent/80 transition-colors"
+              >
+                Read more &rarr;
+              </button>
+            )}
             <button
               onClick={() => setSelectedNode(null)}
               className="absolute top-2 right-3 text-charcoal-muted hover:text-charcoal text-lg"
