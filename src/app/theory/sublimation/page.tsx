@@ -148,39 +148,61 @@ export default function SublimationPage() {
           movement as meaningful journey:
         </p>
 
-        <div className="not-prose my-6 space-y-2">
+        <div className="not-prose my-6 space-y-4">
           {[
             {
               name: "Borobudur",
               desc: "Ascent through layered terraces; movement spirals upward revealing new symbolic fields at each stage. Journey becomes enactment; meaning accumulates through rhythm and repetition.",
+              image: "/images/examples/borobudur.jpg",
+              credit: "Photo: Andrew Otto, CC BY-SA 2.0",
             },
             {
               name: "Katsura Imperial Villa",
               desc: "Meandering paths frame successive views; each step alters perspective. The instinct for exploration becomes contemplative awareness. Nature and architecture are inseparable.",
+              image: "/images/examples/katsura.jpg",
+              credit: "Photo: John Chang, CC BY-SA 3.0",
             },
             {
               name: "Guggenheim Museum",
               desc: "A continuous ramp stages ascent; art is encountered progressively. The spiralling form creates a controlled gradient of exposure and pause.",
+              image: "/images/examples/guggenheim.jpg",
+              credit: "Photo: Ad Meskens, CC BY-SA 3.0",
             },
             {
               name: "Fez Medina",
               desc: "Winding streets, layered openings, sudden courtyards. Coherence is disclosed through progression, not presented all at once — what Gordon Cullen called 'serial vision'.",
+              image: "/images/examples/fez-medina.jpg",
+              credit: "Photo: Petar Milosevic, CC BY-SA 4.0",
             },
             {
               name: "Camino de Santiago",
               desc: "Long-distance movement transformed into structured ritual journey. Basic territorial migration becomes pilgrimage embedded in cultural memory spanning centuries.",
+              image: "/images/examples/camino.jpg",
+              credit: "Photo: Shirley Roots, CC BY 2.0",
             },
           ].map((ex) => (
             <div
               key={ex.name}
-              className="p-4 rounded-xl border border-border bg-surface"
+              className="rounded-xl border border-border bg-surface overflow-hidden"
             >
-              <p className="text-sm font-medium text-charcoal mb-1">
-                {ex.name}
-              </p>
-              <p className="text-sm text-charcoal-light leading-relaxed">
-                {ex.desc}
-              </p>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={ex.image}
+                  alt={ex.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <p className="text-sm font-medium text-charcoal mb-1">
+                  {ex.name}
+                </p>
+                <p className="text-sm text-charcoal-light leading-relaxed">
+                  {ex.desc}
+                </p>
+                <p className="text-[10px] text-charcoal-muted/60 mt-2">
+                  {ex.credit}
+                </p>
+              </div>
             </div>
           ))}
         </div>
