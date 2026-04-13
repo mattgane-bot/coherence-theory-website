@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[33443,["/coherence-theory-website/_next/static/chunks/0zj_hz2uum20w.js","/coherence-theory-website/_next/static/chunks/09t2isllljna7.js","/coherence-theory-website/_next/static/chunks/0d3shmwh5_nmn.js","/coherence-theory-website/_next/static/chunks/0xfz.2l.ej_9j.js"],"ComingSoon"]
+3:I[97367,["/coherence-theory-website/_next/static/chunks/0zj_hz2uum20w.js","/coherence-theory-website/_next/static/chunks/09t2isllljna7.js","/coherence-theory-website/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-12","children":["$","$L2",null,{"title":"19-Step Evaluation Tool","description":"An interactive wizard for evaluating any system — building, city, institution, landscape — using the complete Coherence Theory framework. Step through each condition required for endurance."}]}],[["$","script","script-0",{"src":"/coherence-theory-website/_next/static/chunks/0xfz.2l.ej_9j.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Bo0YMK3UtN5yUYb_i9s-0"}
+5:null
