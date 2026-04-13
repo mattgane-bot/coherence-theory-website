@@ -1,26 +1,144 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Core palette */
+  --color-cream: #FAF8F5;
+  --color-charcoal: #2C2825;
+  --color-charcoal-light: #4A4540;
+  --color-charcoal-muted: #8A8480;
+
+  /* Domain colors */
+  --color-inorganic: #6B7B8D;
+  --color-inorganic-light: #A8B5C2;
+  --color-inorganic-bg: #EDF1F5;
+  --color-organic: #4A6741;
+  --color-organic-light: #8BAF84;
+  --color-organic-bg: #EDF5EC;
+  --color-human: #C4785B;
+  --color-human-light: #DCAA96;
+  --color-human-bg: #FDF3EF;
+
+  /* Accent */
+  --color-accent: #D4A853;
+  --color-accent-light: #E8CC8A;
+  --color-accent-bg: #FDF8EC;
+
+  /* Neutral */
+  --color-border: #E5E0DB;
+  --color-border-dark: #CCC5BD;
+  --color-surface: #FFFFFF;
+  --color-surface-raised: #F5F2EF;
+
+  --background: var(--color-cream);
+  --foreground: var(--color-charcoal);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-cream: var(--color-cream);
+  --color-charcoal: var(--color-charcoal);
+  --color-charcoal-light: var(--color-charcoal-light);
+  --color-charcoal-muted: var(--color-charcoal-muted);
+  --color-inorganic: var(--color-inorganic);
+  --color-inorganic-light: var(--color-inorganic-light);
+  --color-inorganic-bg: var(--color-inorganic-bg);
+  --color-organic: var(--color-organic);
+  --color-organic-light: var(--color-organic-light);
+  --color-organic-bg: var(--color-organic-bg);
+  --color-human: var(--color-human);
+  --color-human-light: var(--color-human-light);
+  --color-human-bg: var(--color-human-bg);
+  --color-accent: var(--color-accent);
+  --color-accent-light: var(--color-accent-light);
+  --color-accent-bg: var(--color-accent-bg);
+  --color-border: var(--color-border);
+  --color-border-dark: var(--color-border-dark);
+  --color-surface: var(--color-surface);
+  --color-surface-raised: var(--color-surface-raised);
+  --font-serif: var(--font-crimson);
+  --font-sans: var(--font-inter);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans, Inter, system-ui, sans-serif);
+}
+
+/* Prose styles for theory content */
+.prose {
+  max-width: 70ch;
+  line-height: 1.75;
+}
+
+.prose h1 {
+  font-family: var(--font-serif, 'Crimson Pro', Georgia, serif);
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--color-charcoal);
+}
+
+.prose h2 {
+  font-family: var(--font-serif, 'Crimson Pro', Georgia, serif);
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-charcoal);
+}
+
+.prose h3 {
+  font-family: var(--font-serif, 'Crimson Pro', Georgia, serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-charcoal);
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+  color: var(--color-charcoal-light);
+}
+
+.prose strong {
+  color: var(--color-charcoal);
+  font-weight: 600;
+}
+
+.prose ul,
+.prose ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  color: var(--color-charcoal-light);
+}
+
+.prose blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--color-charcoal-muted);
+  font-style: italic;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: var(--color-accent-light);
+  color: var(--color-charcoal);
 }

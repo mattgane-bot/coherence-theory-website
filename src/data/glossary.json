@@ -1,0 +1,142 @@
+{
+  "terms": [
+    {
+      "id": "coherence",
+      "term": "Coherence",
+      "definition": "The condition under which a system can sustain alignment under constraint without exhausting its means. Not a matter of appearance or style, but a condition of organised endurance through time.",
+      "domain": "core"
+    },
+    {
+      "id": "energy-entropy",
+      "term": "Energy and Entropy",
+      "definition": "Energy makes organisation possible; entropy continuously degrades structure. All organised systems exist under the condition that organisation must be maintained against decay.",
+      "domain": "governing"
+    },
+    {
+      "id": "triad",
+      "term": "The Triad",
+      "definition": "Gradient, order, and constraint — the general condition under which energy becomes organised into stable structure. Gradient drives change, order organises relationships, constraint stabilises structure.",
+      "domain": "governing"
+    },
+    {
+      "id": "fip",
+      "term": "Fundamental Intrinsic Properties",
+      "definition": "Determine whether structure can exist at all. They govern how matter, force, material, and geometry behave.",
+      "domain": "governing"
+    },
+    {
+      "id": "cip",
+      "term": "Complex Intrinsic Properties",
+      "definition": "Describe the behavioural laws of organised systems through time: emergence, scaling, feedback, thresholds, adaptation, and regulation.",
+      "domain": "governing"
+    },
+    {
+      "id": "intrinsic-emergence",
+      "term": "Intrinsic Emergence",
+      "definition": "How structure, centres, and patterns arise from the interaction of energy, constraint, and repeated use. The threshold at which organised structure first appears.",
+      "domain": "governing"
+    },
+    {
+      "id": "dynamic-engine",
+      "term": "The Dynamic Engine",
+      "definition": "How coherence unfolds and renews through time. Its phases — Translational, Morphogenesis, Emergence, Becoming, Unfolding, and Continuous Improvement — form a recursive sequence.",
+      "domain": "process"
+    },
+    {
+      "id": "centres",
+      "term": "Centres",
+      "definition": "Local concentrations of organised relationship through which coherence begins to become legible in space. The primary units from which forms, patterns, and systems develop.",
+      "domain": "structure"
+    },
+    {
+      "id": "congruence",
+      "term": "Congruence",
+      "definition": "Local integration of strong or compatible centres within a limited area. Occurs when centres reinforce each other within a bounded system.",
+      "domain": "evaluation"
+    },
+    {
+      "id": "wholeness",
+      "term": "Wholeness",
+      "definition": "The condition in which multiple forms of coherence converge into an integrated, surrounding, and mutually reinforcing whole across scales and domains.",
+      "domain": "evaluation"
+    },
+    {
+      "id": "endurance",
+      "term": "Endurance",
+      "definition": "The capacity of a system to continue through time without losing viability, coherence, or meaning.",
+      "domain": "evaluation"
+    },
+    {
+      "id": "sublimation",
+      "term": "Sublimation",
+      "definition": "The process through which human instinct, emotion, memory, and social behaviour are transformed into symbolic, cultural, and spatial structure.",
+      "domain": "human"
+    },
+    {
+      "id": "human-conditions",
+      "term": "Human Conditions",
+      "definition": "Universal environmental situations in which human beings can function: light and shadow, warmth and shelter, prospect and refuge, water, tactile comfort, circadian rhythms.",
+      "domain": "human"
+    },
+    {
+      "id": "neurophysical-system",
+      "term": "Neurophysical System",
+      "definition": "How living organisms perceive, regulate, and respond to their environment through sensory processing, movement, prediction, and autonomic regulation.",
+      "domain": "human"
+    },
+    {
+      "id": "alignment",
+      "term": "Alignment",
+      "definition": "Compatibility between physical, biological, human, and temporal constraints. When these layers align, systems stabilise and endure.",
+      "domain": "evaluation"
+    },
+    {
+      "id": "pattern-languages",
+      "term": "Pattern Languages",
+      "definition": "Recurring spatial, social, and organisational relationships that allow systems to work well and endure through time. How coherence is reproduced.",
+      "domain": "application"
+    },
+    {
+      "id": "form-languages",
+      "term": "Form Languages",
+      "definition": "The geometric, material, and spatial means through which coherent relationships are physically expressed and constructed.",
+      "domain": "application"
+    },
+    {
+      "id": "perceptive-emergence",
+      "term": "Perceptive Emergence",
+      "definition": "The human recognition and experience of structure as coherent, meaningful, beautiful, or alive. How intrinsic structure becomes legible through perception.",
+      "domain": "human"
+    },
+    {
+      "id": "morphogenesis",
+      "term": "Morphogenesis",
+      "definition": "The Dynamic Engine phase where centres and forms appear. The first stable structural condition where energy becomes organised into recognisable structure.",
+      "domain": "process"
+    },
+    {
+      "id": "livingness",
+      "term": "Livingness",
+      "definition": "The degree to which an environment supports, nurtures, and sustains life over time. Includes comfort, health, usability, repair, adaptability, and social function.",
+      "domain": "quality"
+    },
+    {
+      "id": "aliveness",
+      "term": "Aliveness",
+      "definition": "The felt quality of vitality, intensity, and perceptual presence in a place. Recognised as a sense of rightness or presence when a system is deeply coherent.",
+      "domain": "quality"
+    },
+    {
+      "id": "coherence-hierarchy",
+      "term": "Coherence Hierarchy",
+      "definition": "Evaluative framework across six domains: aesthetic/structural, dynamic, livingness, societal, symbolic, and connection to nature coherence.",
+      "domain": "evaluation"
+    },
+    {
+      "id": "organised-under-constraint",
+      "term": "Organised Under Constraint",
+      "definition": "Structure and order form not freely or randomly but are shaped by limits, boundaries, and opposing forces. Without constraint there is no structure, only dispersion.",
+      "domain": "governing"
+    }
+  ]
+}
