@@ -5,6 +5,8 @@ import Link from "next/link";
 import { SublimationFlow } from "@/components/diagrams/SublimationFlow";
 import { SymbolExplorer } from "@/components/diagrams/SymbolExplorer";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function SublimationPage() {
   return (
     <article className="prose">
@@ -187,7 +189,7 @@ export default function SublimationPage() {
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src={ex.image}
+                  src={`${basePath}${ex.image}`}
                   alt={ex.name}
                   className="w-full h-full object-cover"
                 />
