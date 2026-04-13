@@ -102,11 +102,18 @@ export default function GoverningConditionsPage() {
         </p>
 
         <p>
-          Coherence Theory identifies <strong>eleven</strong> Fundamental
+          Coherence Theory identifies <strong>fourteen</strong> Fundamental
           Intrinsic Properties, each satisfying strict criteria: they must be
           present from the moment the framework exists, pre-perceptual, pre-coherence,
-          and unavoidable.
+          and unavoidable. These fourteen properties are organised into three
+          layers of increasing complexity:
         </p>
+
+        <ol>
+          <li><strong>Form-defining conditions</strong> — properties that establish the basic conditions under which form can exist: geometry, scale, mass, and density.</li>
+          <li><strong>Material and boundary behaviour</strong> — how physical substances and edges interact with forces, energy, and environment: material properties, material performance, boundary conditions, and thermal/acoustic behaviour.</li>
+          <li><strong>System stability and energy resolution</strong> — whether a framework can stabilise under force, maintain continuity, and resolve energy through time: structural continuity, spatial continuity, spatial enclosure, physical resistance, energy capacity, and gravity.</li>
+        </ol>
 
         <h2>Complex Intrinsic Properties</h2>
 
