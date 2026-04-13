@@ -1,4 +1,4 @@
-:HL["/coherence-theory-website/_next/static/chunks/0ohkimx88~47j.css","style"]
+:HL["/coherence-theory-website/_next/static/chunks/09x0srr8fi_8o.css","style"]
 :HL["/coherence-theory-website/_next/static/media/115e7a2565b70400-s.p.0ldth1faq2ch-.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/coherence-theory-website/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"glossary","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"9fHo5HnTBbrlyFFAy5pGh"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"glossary","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"iLXS7gdRENrpiAFR5FVE1"}
